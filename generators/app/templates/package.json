@@ -1,0 +1,10 @@
+{
+	"name": "<%= artifactId %>",
+	"version": "0.1.0-SNAPSHOT",
+	"repository": "<%= repo %>",
+	"author": "<% author %>",
+	"devDependencies": 
+	{
+		"badgerfish.composix": "git+https://github.com/jeroenvalk/badgerfish.git"
+	}
+}

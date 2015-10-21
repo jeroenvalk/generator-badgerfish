@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Enter the name and version of the project from package.json here -->
+	<artifactId><![CDATA[<%= artifactId %>]]></artifactId>
+	<version><![CDATA[<%= version %>]]></version>
+
+	<!-- Get the parent POM the Grunt way: (1) before you run Maven, run 'npm 
+		install' first (2) then you can run, e.g., 'mvn initialize' (3) trigger any 
+		grunt task from Maven using 'mvn frontend:grunt -DtargetGrunt=<target>' where 
+		<target> is the Grunt task (probably you want to run <target>=start) -->
+	<parent>
+		<groupId>nl.agentsatwork</groupId>
+		<artifactId>composix-parent-pom</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>node_modules/ComPosiX/src/maven</relativePath>
+	</parent>
+	<packaging>pom</packaging>
+</project>

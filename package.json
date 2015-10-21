@@ -1,0 +1,27 @@
+{
+	"name": "generator-ComPosiX",
+	"version": "0.1.0-SNAPSHOT",
+	"repository": "https://github.com/jeroenvalk/generator-badgerfish.git",
+	"license": "GNU General Public License v3 (GPLv3)",
+	"author": 
+	{
+		"name": "Jeroen Valk",
+		"email": "jeroenvalk@agentsatwork.nl"
+	},
+
+	"description": "Yeoman generator for Badgerfish ComPosiX",
+	"files": 
+	[
+		"generators/app"
+	],
+
+	"keywords": 
+	[
+		"yeoman-generator"
+	],
+
+	"dependencies": 
+	{
+		"yeoman-generator": "^0.20.3"
+	}
+}

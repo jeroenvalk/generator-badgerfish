@@ -2,7 +2,8 @@ var generators = require('yeoman-generator');
 module.exports = generators.Base.extend({
 	writing : function() {
 		var self = this;
-		[ 'package.json', 'pom.xml', 'Gruntfile.js', 'Gruntfile.json' ].forEach(function(fname) {
+		[ 'package.json', 'pom.xml', 'Gruntfile.js', 'Gruntfile.json', 'src/test/webapp/index.html', 'src/test/resources/cd.xml',
+				'src/test/resources/cdcatalog.xml', 'src/test/resources/cdcatalog.xsl' ].forEach(function(fname) {
 			self.fs.copyTpl(self.templatePath(fname), self.destinationPath(fname), {
 				artifactId : '',
 				version : '0.1.0-SNAPSHOT',
